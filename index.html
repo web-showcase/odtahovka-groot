@@ -965,37 +965,94 @@
                 font-size: 0.8rem;
             }
 
-            .contact-wrapper {
-                position: relative;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+        /* Contact Section */
+        .contact {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--toned-dark);
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-box {
+            background: var(--toned-dark);
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .contact-box h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-box p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .contact-btn {
+            width: 100%;
+            max-width: 300px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            background: var(--toned-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            background: var(--toned-gradient-hovered);
+        }
+
+        .whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .whatsapp:hover {
+            background: linear-gradient(135deg, #128C7E, #25D366);
+        }
+
+        @media (max-width: 768px) {
+            .contact-box {
+                padding: 40px 25px;
             }
 
-            .contact-image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 700px;
-                height: 700px;
-                align-content: left;
-                margin-left: -100px;
-                margin-top: -20px;
-                z-index: 0;
+            .contact-box h3 {
+                font-size: 1.6rem;
             }
-
-            .contact-image img {
-                visibility: hidden;
-                object-fit: cover;
-                border-radius: 0; 
-            }
-
-            .contact-form {
-                position: relative;
-                z-index: 1;
-                width: 100%;
-                padding: 30px;
-            }
+        }
 
             .instagram-grid {
                 grid-template-columns: repeat(2, 1fr);
